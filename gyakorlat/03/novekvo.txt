@@ -1,0 +1,6 @@
+bekér max
+bekér akt
+amíg akt > max
+    max = akt
+    bekér akt
+kiír max
