@@ -1,0 +1,5 @@
+be: n
+amig n > 0:
+    osszuk el n-t 2-vel
+    irjuk ki a maradekot
+valahogy? forditsuk meg a kiirt stringet
