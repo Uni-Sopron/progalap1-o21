@@ -3,6 +3,6 @@ message_count = int(input("How many SMSs did you send? "))
 minute_price = int(input("How much does a minute of call cost you? "))
 message_price = int(input("How much does an SMS cost you? "))
 
-total_cost = call_minutes * minute_price + message_count * message_price
+cost = call_minutes * minute_price + message_count * message_price
 
-print("Your total bill for calling is: ", total_cost)
+print("Your total bill for calling is: ", cost)

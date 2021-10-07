@@ -5,13 +5,13 @@ def input_mothly_usage(month):
     return call_minutes, message_count
 
 def input_annual_usage(month_count):
-    call_minutes = []
-    message_count = []
+    annual_call_minutes = []
+    annual_message_count = []
     for month in range(1,month_count+1):
-        month_call_minutes, month_message_count = input_mothly_usage(month)
-        call_minutes.append(month_call_minutes)
-        message_count.append(month_message_count)
-    return call_minutes, message_count
+        call_minutes, message_count = input_mothly_usage(month)
+        annual_call_minutes.append(call_minutes)
+        annual_message_count.append(message_count)
+    return annual_call_minutes, annual_message_count
 
 def input_tariff_fees():
     print("Tariff fees:")
@@ -21,21 +21,21 @@ def input_tariff_fees():
     return minute_price,message_price,monthly_base_fee
 
 def month_cost_calculation(call_minutes,message_count,minute_price,message_price, monthly_base_fee):
-    month_total_cost = call_minutes * minute_price + message_count * message_price
-    if month_total_cost < monthly_base_fee:
-        month_total_cost = monthly_base_fee
+    month_cost = call_minutes * minute_price + message_count * message_price
+    if month_cost < monthly_base_fee:
+        month_cost = monthly_base_fee
 
-def total_cost_calculation(month_count, call_minutes, message_count,minute_price,message_price, monthly_base_fee):
-    total_cost=0
+def annual_cost_calculation(month_count, annual_call_minutes, annual_message_count,minute_price,message_price, monthly_base_fee):
+    annual_cost=0
     for month in range(month_count):
-        total_cost += month_cost_calculation(call_minutes[month],message_count[month],minute_price,message_price, monthly_base_fee)
-    return total_cost
+        annual_cost += month_cost_calculation(annual_call_minutes[month],annual_message_count[month],minute_price,message_price, monthly_base_fee)
+    return annual_cost
 
 
 month_count = 2
-call_minutes, message_count = input_annual_usage(month_count)
+annual_call_minutes, annual_message_count = input_annual_usage(month_count)
 minute_price,  message_price, monthly_base_fee = input_tariff_fees()
-total_cost = total_cost_calculation(month_count, call_minutes, message_count,minute_price,message_price, monthly_base_fee)
+annual_cost = annual_cost_calculation(month_count, annual_call_minutes, annual_message_count,minute_price,message_price, monthly_base_fee)
 
 
-print("Your total bill for calling is: ", total_cost)
+print("Your total bill for calling is: ", annual_cost)

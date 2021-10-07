@@ -5,9 +5,9 @@ minute_price = int(input("How much does a minute of call cost you? "))
 message_price = int(input("How much does an SMS cost you? "))
 monthly_base_fee = int(input("How much is your monthly base fee? "))
 
-total_cost = call_minutes * minute_price + message_count * message_price
+cost = call_minutes * minute_price + message_count * message_price
 
-if total_cost < monthly_base_fee:
-    total_cost = monthly_base_fee
+if cost < monthly_base_fee:
+    cost = monthly_base_fee
 
-print("Your total bill for calling is: ", total_cost)
+print("Your total bill for calling is: ", cost)
