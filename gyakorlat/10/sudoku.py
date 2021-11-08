@@ -13,20 +13,30 @@ def readFromFile(fname: str) -> List[List[int]]:
     return table
 
 def printTable(table: List[List[int]]):
+    print('   ', end='')
+    for i in range(1, 10):
+        print(i, end=' ')
+    print('')
     i = 0
     for row in table:
         i += 1
         if i == 1:
-            print('-'*19)
-        print('|', end='')
+            print('-'*21)
+        print(i, end=' |')
+        j = 0
         for x in row:
             if x == 0:
-                print('.', end=' ')
+                print('.', end='')
             else:
-                print(x, end=' ')
-        print('|')
-        if i == 9:
-            print('-'*19)
+                print(x, end='')
+            j += 1
+            if j % 3 == 0:
+                print('|', end='')
+            else:
+                print(' ', end='')
+        print('')
+        if i % 3 == 0:
+            print('-'*21)
     return
 
 def readMove() -> dict:
