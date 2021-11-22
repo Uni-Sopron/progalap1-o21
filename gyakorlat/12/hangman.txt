@@ -1,0 +1,14 @@
+word: ........
+lives left: 10
+guessed letters:
+guess a letter: a
+
+word: a....a..
+lives left: 10
+guessed letters: a
+guess a letter: b
+
+word: a....a..
+lives left: 9
+guessed letters: a,b
+guess a letter: b
