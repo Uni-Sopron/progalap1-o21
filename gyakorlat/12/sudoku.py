@@ -58,8 +58,22 @@ def isCompleted(table: List[List[int]]) -> bool:
     # TODO
     return False
 
+def subMatrix(row: int, col: int, table: List[List[int]]) -> List[int]:
+    submatrix = []
+    for r in range((row // 3) * 3, (row // 3) * 3 + 3):
+        for c in range((col // 3) * 3, (col // 3) * 3 + 3):
+            submatrix.append(table[r][c])
+    return submatrix
+
 def isValidMove(move: Dict[str, int], table: List[List[int]]) -> bool:
-    # TODO
+    val = move['val']
+    row = move['row']
+    col = move['col']
+    if val in table[row]:
+        return False
+    # TODO same for column
+    if val in subMatrix(row, col, table):
+        return False
     return True
 
 def main():
