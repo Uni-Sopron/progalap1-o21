@@ -3,6 +3,6 @@
     "height": 20,
     "alive": "#",
     "dead": ".",
-    "alive_percent_start": 30,
+    "alive_count_start": 30,
     "num_rounds": 100
 }
