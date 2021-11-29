@@ -1,0 +1,8 @@
+{
+    "width": 50,
+    "height": 25,
+    "alive": "#",
+    "dead": ".",
+    "alive_percent_start": 30,
+    "num_rounds": 100
+}
