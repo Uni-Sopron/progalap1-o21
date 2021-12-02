@@ -7,7 +7,7 @@ subjects = "subjects.csv"
 
 """Ebben a fájlban vannak a vizsgaeredmények egy JSON listában.
     A lista minden eleme egy dictionary, 3 kulcs-érték párral.
-    A "subject" a tárgy neve, ahogy a subjects.txt-ben is szerepel.
+    A "subject" a tárgy neve, ahogy a subjects.csv-ben is szerepel.
     A "date" a vizsga dátuma yyyy.mm.dd formátumban.
     (Egy tárgyból egy napon csak 1 vizsga lehet.)
     A "grade" a vizsgajegy 1-5 között."""
