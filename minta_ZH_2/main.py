@@ -1,9 +1,9 @@
 # Készítsd el az alábbi 2 függvény implementációját!
 # A megoldáshoz készíthetsz további segédfüggvényeket is.
 
-"""Ebben a fájlban vannak a felvett tárgyak, soronként 1.
-    Minden sor elején a tárgy kreditértéke van, majd szóköz után a neve."""
-subjects = "subjects.txt"
+"""Ebben a szöveges fájlban vannak a felvett tárgyak, soronként 1.
+    Minden sor elején a tárgy kreditértéke van, majd pontosvessző után a neve."""
+subjects = "subjects.csv"
 
 """Ebben a fájlban vannak a vizsgaeredmények egy JSON listában.
     A lista minden eleme egy dictionary, 3 kulcs-érték párral.
