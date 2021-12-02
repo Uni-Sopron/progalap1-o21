@@ -1,0 +1,50 @@
+[
+    {
+        "subject": "Prog1 gyakorlat",
+        "students": "GAIN BSC 2021",
+        "teacher": "Osz",
+        "duration": 3
+    },
+    {
+        "subject": "SZAR gyak",
+        "students": "GAIN BSC 2021",
+        "teacher": "Enzsol",
+        "duration": 1
+    },
+    {
+        "subject": "Matek eloadas",
+        "students": "GAIN BSC 2021",
+        "teacher": "Szovathy",
+        "duration": 2
+    },
+    {
+        "subject": "Matek gyak",
+        "students": "GAIN BSC 2021",
+        "teacher": "Szovathy",
+        "duration": 2
+    },
+    {
+        "subject": "OS gyak",
+        "students": "GAIN BSC 2020",
+        "teacher": "Szalai",
+        "duration": 2
+    },
+    {
+        "subject": "Web 1",
+        "students": "GAIN BSC 2020",
+        "teacher": "Szabo",
+        "duration": 4
+    },
+    {
+        "subject": "DTR",
+        "students": "GAIN BSC 2018",
+        "teacher": "Hegyhati",
+        "duration": 4
+    },
+    {
+        "subject": "Kozgaz",
+        "students": "GAIN BSC 2021",
+        "teacher": "Resperger",
+        "duration": 4
+    }
+]

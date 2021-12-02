@@ -1,0 +1,26 @@
+[
+    {
+        "subject": "Prog1 eloadas",
+        "students": "GAIN BSC 2021",
+        "teacher": "Hegyhati",
+        "duration": 2,
+        "day": 0,
+        "start": 12
+    },
+    {
+        "subject": "SZAR eloadas",
+        "students": "GAIN BSC 2021",
+        "teacher": "Szalai",
+        "duration": 2,
+        "day": 1,
+        "start": 8
+    },
+    {
+        "subject": "OS eloadas",
+        "students": "GAIN BSC 2020",
+        "teacher": "Garab",
+        "duration": 2,
+        "day": 0,
+        "start": 12
+    }
+]
